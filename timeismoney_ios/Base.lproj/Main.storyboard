@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="timeismoney_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APD-Oz-20S">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="TlT-fL-LVA">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="o0n-By-bQs"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimeIsMoney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amT-w6-ox2">
+                                <rect key="frame" x="136.5" y="32" width="102.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deduction Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL9-yj-jc9">
+                                <rect key="frame" x="115.5" y="103" width="143.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVf-dl-T9Y">
+                                <rect key="frame" x="166" y="137.5" width="55.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpt-gK-uEb">
+                                <rect key="frame" x="170" y="459" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2S-Yc-skr"/>
+                                    <segue destination="QpE-2d-ssz" kind="show" id="3bd-gL-GDI"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="XUw-3H-KCA">
+                                <rect key="frame" x="158" y="234" width="58" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1 hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-Ux-ZF1" customClass="UILabelPadding" customModule="timeismoney_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0r-y5-5aO" customClass="UILabelPadding" customModule="timeismoney_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="34.5" width="58" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-fs-pKM" customClass="UILabelPadding" customModule="timeismoney_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="58" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JL9-yj-jc9" firstAttribute="centerX" secondItem="amT-w6-ox2" secondAttribute="centerX" id="323-mU-09e"/>
+                            <constraint firstItem="APD-Oz-20S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4y3-3R-rBZ"/>
+                            <constraint firstItem="oVf-dl-T9Y" firstAttribute="top" secondItem="JL9-yj-jc9" secondAttribute="bottom" constant="14" id="7d4-oB-DFF"/>
+                            <constraint firstItem="APD-Oz-20S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CbU-3n-0Qs"/>
+                            <constraint firstItem="amT-w6-ox2" firstAttribute="centerX" secondItem="APD-Oz-20S" secondAttribute="centerX" id="Ens-jo-mrJ"/>
+                            <constraint firstAttribute="bottom" secondItem="XUw-3H-KCA" secondAttribute="bottom" constant="371" id="GsN-Rg-taz"/>
+                            <constraint firstAttribute="trailing" secondItem="APD-Oz-20S" secondAttribute="trailing" id="MUJ-EW-S5y"/>
+                            <constraint firstItem="Dpt-gK-uEb" firstAttribute="centerX" secondItem="APD-Oz-20S" secondAttribute="centerX" id="Nkv-t0-aba"/>
+                            <constraint firstItem="oVf-dl-T9Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="Quo-J0-C6S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dpt-gK-uEb" secondAttribute="bottom" constant="178" id="aYG-mP-7RN"/>
+                            <constraint firstItem="amT-w6-ox2" firstAttribute="centerY" secondItem="APD-Oz-20S" secondAttribute="centerY" id="cZD-KO-veI"/>
+                            <constraint firstItem="JL9-yj-jc9" firstAttribute="top" secondItem="APD-Oz-20S" secondAttribute="bottom" constant="39" id="g8M-DG-oSH"/>
+                            <constraint firstItem="XUw-3H-KCA" firstAttribute="centerX" secondItem="Dpt-gK-uEb" secondAttribute="centerX" id="rKf-4x-lyp"/>
+                            <constraint firstItem="XUw-3H-KCA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="234" id="t7V-bp-adK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="deductionAmount" destination="oVf-dl-T9Y" id="69A-64-YcK"/>
+                        <outlet property="oneHour" destination="yxX-Ux-ZF1" id="1Yz-JA-L8j"/>
+                        <outlet property="threeHour" destination="3lA-fs-pKM" id="m9b-IW-xrB"/>
+                        <outlet property="twoHour" destination="M0r-y5-5aO" id="txm-Y0-bTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6IO-Jv-bOZ">
+            <objects>
+                <viewController id="QpE-2d-ssz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="29j-vZ-1HG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJ3-MV-9ob">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="TimeIsMoney" id="kHK-F5-eW7">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Bad-CH-bK5"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="pmW-LW-hDk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqa-Vk-nUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="134"/>
         </scene>
     </scenes>
 </document>
