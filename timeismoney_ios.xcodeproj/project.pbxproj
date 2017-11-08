@@ -16,6 +16,9 @@
 		9C7F27B31FAE5C2700104D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F27B21FAE5C2700104D5C /* Assets.xcassets */; };
 		9C7F27B61FAE5C2700104D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F27B41FAE5C2700104D5C /* LaunchScreen.storyboard */; };
 		9C7F27C11FAE5C2700104D5C /* timeismoney_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F27C01FAE5C2700104D5C /* timeismoney_iosTests.swift */; };
+		9CA982E01FB0C2DE009742A9 /* TimerActiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */; };
+		9CA982E31FB0CB95009742A9 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982E21FB0CB95009742A9 /* Countdown.swift */; };
+		9CA982E51FB3567E009742A9 /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		9C7F27BC1FAE5C2700104D5C /* timeismoney_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeismoney_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7F27C01FAE5C2700104D5C /* timeismoney_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeismoney_iosTests.swift; sourceTree = "<group>"; };
 		9C7F27C21FAE5C2700104D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActiveVC.swift; sourceTree = "<group>"; };
+		9CA982E21FB0CB95009742A9 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9C02E6F61FAE7C2C0089A777 /* UILabelPadding.swift */,
+				9CA982E21FB0CB95009742A9 /* Countdown.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -109,12 +116,14 @@
 		9C7F27AA1FAE5C2600104D5C /* timeismoney_ios */ = {
 			isa = PBXGroup;
 			children = (
+				9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */,
 				9C7F27AB1FAE5C2600104D5C /* AppDelegate.swift */,
 				9C7F27AD1FAE5C2600104D5C /* MainVC.swift */,
 				9C7F27AF1FAE5C2700104D5C /* Main.storyboard */,
 				9C7F27B21FAE5C2700104D5C /* Assets.xcassets */,
 				9C7F27B41FAE5C2700104D5C /* LaunchScreen.storyboard */,
 				9C7F27B71FAE5C2700104D5C /* Info.plist */,
+				9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */,
 			);
 			path = timeismoney_ios;
 			sourceTree = "<group>";
@@ -296,11 +305,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-timeismoney_ios/Pods-timeismoney_ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/SRCountdownTimer/SRCountdownTimer.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFRippleButton/ZFRippleButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SRCountdownTimer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFRippleButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,9 +361,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA982E01FB0C2DE009742A9 /* TimerActiveVC.swift in Sources */,
 				9C02E6F71FAE7C2C0089A777 /* UILabelPadding.swift in Sources */,
 				9C7F27AE1FAE5C2600104D5C /* MainVC.swift in Sources */,
 				9C7F27AC1FAE5C2600104D5C /* AppDelegate.swift in Sources */,
+				9CA982E31FB0CB95009742A9 /* Countdown.swift in Sources */,
+				9CA982E51FB3567E009742A9 /* LoginRegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
