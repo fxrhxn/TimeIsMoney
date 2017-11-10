@@ -33,6 +33,7 @@ import UIKit
 }
 
 public class SRCountdownTimer: UIView {
+    
     public var lineWidth: CGFloat = 2.0
     public var lineColor: UIColor = .black
     public var trailLineColor: UIColor = UIColor.lightGray.withAlphaComponent(0.5)
@@ -40,7 +41,11 @@ public class SRCountdownTimer: UIView {
     public var isLabelHidden: Bool = false
     public var labelFont: UIFont?
     public var timerFinishingText: String?
-
+    
+    //Have the number value so we can do dope shit.
+    public var counterNumberVal : Int?
+    
+    
     public weak var delegate: SRCountdownTimerDelegate?
 
     private var timer: Timer?
@@ -51,7 +56,7 @@ public class SRCountdownTimer: UIView {
     private lazy var counterLabel: UILabel = {
         let label = UILabel()
         self.addSubview(label)
-
+ 
         label.textAlignment = .center
         label.frame = self.bounds
         if let font = self.labelFont {
@@ -66,6 +71,8 @@ public class SRCountdownTimer: UIView {
                 if let text = timerFinishingText, currentCounterValue == 0 {
                     counterLabel.text = text
                 } else {
+                    
+                    counterNumberVal = currentCounterValue
                     counterLabel.text = "\(currentCounterValue)"
                 }
             }

@@ -57,16 +57,36 @@ class LoginRegisterVC: UIViewController, UITextFieldDelegate {
     //When login is pressed.
     @IBAction func loginButtonPressed(_ sender: Any) {
         
-        print("Logging IN!")
+        //Push to the login page.
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "mainVC") as! MainVC
+        self.present(newViewController, animated: true, completion: nil)
+        
+        
     
     }
     
     //When register button is pressed.
     @IBAction func registerButtonPressed(_ sender: Any) {
         
-        print("REGISTERING!")
+        //Push to the login page.
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "mainVC") as! MainVC
+        self.present(newViewController, animated: true, completion: nil)
     
     }
+    
+    
+    //Show an activity indicator.
+    func showActivity(){
+    
+    }
+    
+    //Show the buttons.
+    func showButtons(){
+        
+    }
+    
     
 
 }

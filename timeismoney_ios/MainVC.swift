@@ -206,6 +206,15 @@ class MainVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     //When the start button is clicked.
     @IBAction func startButton(_ sender: Any) {
         
+        print(current_hour)
+        print(current_amount)
+        
+        //Push to the login page.
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "timerActiveVC") as! TimerActiveVC
+        self.present(newViewController, animated: true, completion: nil)
+        
+        
     }
     
     
@@ -217,6 +226,16 @@ class MainVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         
     }
     
+    //When the profile button is clicked.
+    @IBAction func profileClicked(_ sender: Any) {
+        
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "profileVC") as! ProfileVC
+        self.present(newViewController, animated: true, completion: nil)
+        
+        
+    }
     
 }
 

@@ -19,6 +19,13 @@
 		9CA982E01FB0C2DE009742A9 /* TimerActiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */; };
 		9CA982E31FB0CB95009742A9 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982E21FB0CB95009742A9 /* Countdown.swift */; };
 		9CA982E51FB3567E009742A9 /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */; };
+		9CA982E71FB4B0B2009742A9 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA982E61FB4B0B2009742A9 /* LoadingVC.swift */; };
+		9CC3D0A61FB4BEFF0001D004 /* Token_Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0A51FB4BEFF0001D004 /* Token_Settings.swift */; };
+		9CC3D0A81FB4D8A20001D004 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0A71FB4D8A20001D004 /* Account.swift */; };
+		9CC3D0AA1FB4DF100001D004 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0A91FB4DF100001D004 /* ProfileVC.swift */; };
+		9CC3D0AD1FB4E2A60001D004 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0AC1FB4E2A60001D004 /* CustomStackView.swift */; };
+		9CC3D0AF1FB4E9AE0001D004 /* HistoryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0AE1FB4E9AE0001D004 /* HistoryTab.swift */; };
+		9CC3D0B21FB5FAA90001D004 /* FlyingLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3D0B11FB5FAA90001D004 /* FlyingLabels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 		9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActiveVC.swift; sourceTree = "<group>"; };
 		9CA982E21FB0CB95009742A9 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
+		9CA982E61FB4B0B2009742A9 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		9CC3D0A51FB4BEFF0001D004 /* Token_Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token_Settings.swift; sourceTree = "<group>"; };
+		9CC3D0A71FB4D8A20001D004 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9CC3D0A91FB4DF100001D004 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		9CC3D0AC1FB4E2A60001D004 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		9CC3D0AE1FB4E9AE0001D004 /* HistoryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTab.swift; sourceTree = "<group>"; };
+		9CC3D0B11FB5FAA90001D004 /* FlyingLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingLabels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,8 @@
 			children = (
 				9C02E6F61FAE7C2C0089A777 /* UILabelPadding.swift */,
 				9CA982E21FB0CB95009742A9 /* Countdown.swift */,
+				9CC3D0A51FB4BEFF0001D004 /* Token_Settings.swift */,
+				9CC3D0A71FB4D8A20001D004 /* Account.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -95,6 +111,8 @@
 		9C7F279F1FAE5C2600104D5C = {
 			isa = PBXGroup;
 			children = (
+				9CC3D0B01FB5FA870001D004 /* Testing */,
+				9CC3D0AB1FB4E2650001D004 /* Custom */,
 				9C02E6F51FAE7C0B0089A777 /* Utils */,
 				9C7F27AA1FAE5C2600104D5C /* timeismoney_ios */,
 				9C7F27BF1FAE5C2700104D5C /* timeismoney_iosTests */,
@@ -119,11 +137,13 @@
 				9CA982DF1FB0C2DE009742A9 /* TimerActiveVC.swift */,
 				9C7F27AB1FAE5C2600104D5C /* AppDelegate.swift */,
 				9C7F27AD1FAE5C2600104D5C /* MainVC.swift */,
+				9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */,
+				9CA982E61FB4B0B2009742A9 /* LoadingVC.swift */,
+				9CC3D0A91FB4DF100001D004 /* ProfileVC.swift */,
 				9C7F27AF1FAE5C2700104D5C /* Main.storyboard */,
 				9C7F27B21FAE5C2700104D5C /* Assets.xcassets */,
 				9C7F27B41FAE5C2700104D5C /* LaunchScreen.storyboard */,
 				9C7F27B71FAE5C2700104D5C /* Info.plist */,
-				9CA982E41FB3567E009742A9 /* LoginRegisterVC.swift */,
 			);
 			path = timeismoney_ios;
 			sourceTree = "<group>";
@@ -135,6 +155,23 @@
 				9C7F27C21FAE5C2700104D5C /* Info.plist */,
 			);
 			path = timeismoney_iosTests;
+			sourceTree = "<group>";
+		};
+		9CC3D0AB1FB4E2650001D004 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3D0AC1FB4E2A60001D004 /* CustomStackView.swift */,
+				9CC3D0AE1FB4E9AE0001D004 /* HistoryTab.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		9CC3D0B01FB5FA870001D004 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3D0B11FB5FAA90001D004 /* FlyingLabels.swift */,
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 		CABBC59284F9097C5169EAC2 /* Pods */ = {
@@ -361,12 +398,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC3D0AA1FB4DF100001D004 /* ProfileVC.swift in Sources */,
+				9CC3D0A61FB4BEFF0001D004 /* Token_Settings.swift in Sources */,
 				9CA982E01FB0C2DE009742A9 /* TimerActiveVC.swift in Sources */,
 				9C02E6F71FAE7C2C0089A777 /* UILabelPadding.swift in Sources */,
+				9CC3D0AF1FB4E9AE0001D004 /* HistoryTab.swift in Sources */,
+				9CC3D0AD1FB4E2A60001D004 /* CustomStackView.swift in Sources */,
 				9C7F27AE1FAE5C2600104D5C /* MainVC.swift in Sources */,
 				9C7F27AC1FAE5C2600104D5C /* AppDelegate.swift in Sources */,
+				9CC3D0B21FB5FAA90001D004 /* FlyingLabels.swift in Sources */,
+				9CC3D0A81FB4D8A20001D004 /* Account.swift in Sources */,
 				9CA982E31FB0CB95009742A9 /* Countdown.swift in Sources */,
 				9CA982E51FB3567E009742A9 /* LoginRegisterVC.swift in Sources */,
+				9CA982E71FB4B0B2009742A9 /* LoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
